@@ -1,6 +1,6 @@
 import React from "react";
 
-const Ergebnisse = () => {
+const Ergebnisse = (props) => {
   return (
     <div>
       <h1>Ergebnisse</h1>

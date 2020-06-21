@@ -1,10 +1,10 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-const Kategorie = () => {
+const Kategorie = ({ fcn: gatherInputValues }) => {
   const { handleSubmit, register } = useForm();
   const onSubmit = (values) => {
-    console.log(values);
+    gatherInputValues(values);
   };
   return (
     <div>
@@ -15,7 +15,7 @@ const Kategorie = () => {
             <input
               type="radio"
               value="Alles"
-              name="radio"
+              name="Kategorie"
               id="kat1"
               ref={register()}
             />
@@ -25,7 +25,7 @@ const Kategorie = () => {
             <input
               type="radio"
               value="Burger"
-              name="radio"
+              name="Kategorie"
               id="kat2"
               ref={register()}
             />
@@ -35,7 +35,7 @@ const Kategorie = () => {
             <input
               type="radio"
               value="Pizza / Pasta"
-              name="radio"
+              name="Kategorie"
               id="kat3"
               ref={register()}
             />
@@ -45,7 +45,7 @@ const Kategorie = () => {
             <input
               type="radio"
               value="Asiatisch"
-              name="radio"
+              name="Kategorie"
               id="kat4"
               ref={register()}
             />
@@ -55,7 +55,7 @@ const Kategorie = () => {
             <input
               type="radio"
               value="Hausmannskost"
-              name="radio"
+              name="Kategorie"
               id="kat5"
               ref={register()}
             />
@@ -65,7 +65,7 @@ const Kategorie = () => {
             <input
               type="radio"
               value="Sonstiges"
-              name="radio"
+              name="Kategorie"
               id="kat6"
               ref={register()}
             />

@@ -2,7 +2,7 @@ import React from "react";
 import Kategorie from "./components/Kategorie";
 import Entfernung from "./components/Entfernung";
 import Preis from "./components/Preis";
-import Vegetauglich from "./components/Vegetauglich";
+import Veggietauglich from "./components/Veggietauglich";
 import Ergebnisse from "./components/Ergebnisse";
 // import Karte from "./components/Karte";
 import "./App.css";
@@ -12,17 +12,23 @@ class App extends React.Component {
     Kategorie: "",
     Entfernung: "",
     Preis: "",
-    Vegetauglich: "",
+    Veggietauglich: "",
   };
+
+  gatherInputValues = (inputValue) => {
+    this.setState(inputValue);
+    console.log(this.state);
+  };
+
   render() {
     return (
       <div className="App">
         <h1>WO/WAS ESSEN WIR HEUTE</h1>
-        <Kategorie />
-        <Entfernung />
-        <Preis />
-        <Vegetauglich />
-        <Ergebnisse />
+        <Kategorie fcn={this.gatherInputValues} />
+        <Entfernung fcn={this.gatherInputValues} />
+        <Preis fcn={this.gatherInputValues} />
+        <Veggietauglich fcn={this.gatherInputValues} />
+        <Ergebnisse filterdata={this.state} />
         <div>
           <button>Reset</button>
           <button>Randomize</button>

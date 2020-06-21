@@ -1,45 +1,45 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-const Entfernung = ({ fcn: gatherInputValues }) => {
+const Veggietauglich = ({ fcn: gatherInputValues }) => {
   const { handleSubmit, register } = useForm();
   const onSubmit = (values) => {
     gatherInputValues(values);
   };
   return (
     <div>
-      <h2>Entfernung</h2>
+      <h2>Veggietauglich</h2>
       <form onChange={handleSubmit(onSubmit)}>
         <ul className="options-selector">
           <li>
             <input
               type="radio"
               value="*"
-              name="Entfernung"
-              id="ent1"
+              name="Veggietauglich"
+              id="veggie1"
               ref={register()}
             />
-            <label htmlFor="ent1">Egal</label>
+            <label htmlFor="veggie1">Egal</label>
           </li>
           <li>
             <input
               type="radio"
               value="**"
-              name="Entfernung"
-              id="ent2"
+              name="veggie"
+              id="veggie2"
               ref={register()}
             />
-            <label htmlFor="ent2">nicht so weit weg</label>
+            <label htmlFor="veggie2">sollte schon schmecken</label>
           </li>
           <li>
             <input
               type="radio"
               value="***"
-              name="Entfernung"
-              id="ent3"
+              name="veggie"
+              id="veggie3"
               ref={register()}
             />
-            <label htmlFor="ent3">ganz nah dran</label>
+            <label htmlFor="veggie3">muss ganz lecker sein</label>
           </li>
         </ul>
       </form>
@@ -47,4 +47,4 @@ const Entfernung = ({ fcn: gatherInputValues }) => {
   );
 };
 
-export default Entfernung;
+export default Veggietauglich;

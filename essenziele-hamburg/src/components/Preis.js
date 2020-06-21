@@ -1,10 +1,10 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-const Preis = () => {
+const Preis = ({ fcn: gatherInputValues }) => {
   const { handleSubmit, register } = useForm();
   const onSubmit = (values) => {
-    console.log(values);
+    gatherInputValues(values);
   };
   return (
     <div>
@@ -15,7 +15,7 @@ const Preis = () => {
             <input
               type="radio"
               value="*"
-              name="preis"
+              name="Preis"
               id="preis1"
               ref={register()}
             />
@@ -25,7 +25,7 @@ const Preis = () => {
             <input
               type="radio"
               value="**"
-              name="preis"
+              name="Preis"
               id="preis2"
               ref={register()}
             />
@@ -35,7 +35,7 @@ const Preis = () => {
             <input
               type="radio"
               value="***"
-              name="preis"
+              name="Preis"
               id="preis3"
               ref={register()}
             />

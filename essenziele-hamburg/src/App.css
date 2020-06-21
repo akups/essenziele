@@ -10,6 +10,7 @@
 .options-selector li:active {
   background-color: black;
   color: white;
+  transform: translateY(4px);
 }
 
 .options-selector li {

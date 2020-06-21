@@ -46,7 +46,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>WO/WAS ESSEN WIR HEUTE</h1>
+        <div className="title">
+          <h1>WO/WAS ESSEN WIR HEUTE</h1>
+          <img src="../images/logo.png" alt="logo" />
+        </div>
+
         <Kategorie fcn={this.gatherInputValues} />
         <Entfernung fcn={this.gatherInputValues} />
         <Preis fcn={this.gatherInputValues} />

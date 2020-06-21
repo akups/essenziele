@@ -25,7 +25,7 @@ const Veggietauglich = ({ fcn: gatherInputValues }) => {
             <input
               type="radio"
               value="**"
-              name="veggie"
+              name="Veggietauglich"
               id="veggie2"
               ref={register()}
             />
@@ -35,7 +35,7 @@ const Veggietauglich = ({ fcn: gatherInputValues }) => {
             <input
               type="radio"
               value="***"
-              name="veggie"
+              name="Veggietauglich"
               id="veggie3"
               ref={register()}
             />

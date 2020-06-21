@@ -7,8 +7,7 @@ ich werde viel mehr machne hatte ich mehr Zeit
 
 1. ich wollte eine Karte anzeigen mit alle möglichkeiten drauf
 
-Meine Ergebnisse zeigt mehr als ich zeigen will. eigentlich will nur zeigen was alle 4 Bedingungen erfullt aber dass wurde nicht möglich weil es gibt nicht so viele Restaurants die so alle bediengungen erfullt deswegen habe ich or||statt &&
-benutzt ansonten wurde mein Ergbnisse nichts zeigen hatte ich ein groBere datensatz wurde es möglich
+Meine Ergebnisse zeigt mehr nicht als ich es zeigen will. Eigentlich ich will nur zeigen was alle 4 Bedingungen erfullt aber dass wurde nicht möglich weil es gibt nicht so viele Restaurants die so viele Bedingungen erfullt deswegen habe ich or||statt && benutzt ansonten wurde mein Ergbnisse nichts zeigen hatte ich ein groBere datensatz wurde es möglich
 
 Ich habe meine app 'deployed'
 https://essenziele.akups.vercel.app/

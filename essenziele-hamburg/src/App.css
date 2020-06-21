@@ -7,6 +7,11 @@
   list-style: none;
   margin-left: 20px;
 }
+.options-selector li:active {
+  background-color: black;
+  color: white;
+}
+
 .options-selector li {
   list-style: none;
   border: solid 1px black;
@@ -38,26 +43,39 @@
 
 .App {
   width: 85vw;
-  height: 85vh;
+  height: 95vh;
   border: solid 2px black;
   margin-left: 50px;
 }
 
 .reset {
-  border: solid 1px black;
+  border: solid 2px black;
   background-color: white;
   color: black;
   width: 120px;
   height: 60px;
+  margin-right: 5px;
   text-align: center;
+  margin-bottom: 30px;
 }
 .randomize {
-  border: solid 1px black;
+  border: solid 2px black;
   background-color: black;
   color: white;
-  width: 150px;
+  margin-right: 5px;
+  width: 120px;
   height: 60px;
   text-align: center;
+  margin-bottom: 0px;
 }
 .ergebnisse {
+  border: solid 1px black;
+  background-color: white;
+  width: 500px;
+  height: 330px;
+  margin-left: 5px;
+  margin-bottom: 30px;
+}
+h2 {
+  padding-left: 50px;
 }

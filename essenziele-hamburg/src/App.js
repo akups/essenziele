@@ -19,6 +19,30 @@ class App extends React.Component {
     this.setState(inputValue);
   };
 
+  resetValues = () => {
+    this.setState({
+      Kategorie: "",
+      Entfernung: "",
+      Preis: "",
+      Veggietauglich: "",
+    });
+  };
+
+  randomizeValues = () => {
+    const Kategorie = [
+      "Alles",
+      "Burger",
+      "Asiatisch",
+      "Pizza / Pasta",
+      "Sontiges",
+      "Hausmannskost",
+    ][Math.floor(Math.random() * 3)];
+    const Preis = ["*", "**", "***"][Math.floor(Math.random() * 3)];
+    const Entfernung = ["*", "**", "***"][Math.floor(Math.random() * 3)];
+    const Veggietauglich = ["*", "**", "***"][Math.floor(Math.random() * 3)];
+    this.setState({ Preis, Kategorie, Entfernung, Veggietauglich });
+  };
+
   render() {
     return (
       <div className="App">
@@ -32,8 +56,12 @@ class App extends React.Component {
             <Ergebnisse filterData={this.state} />
           </div>
           <div>
-            <button className="reset">Reset</button>
-            <button className="randomize">Randomize</button>
+            <button className="reset" onClick={this.resetValues}>
+              Reset
+            </button>
+            <button className="randomize" onClick={this.randomizeValues}>
+              Randomize
+            </button>
           </div>
         </div>
         {/* <Karte /> */}

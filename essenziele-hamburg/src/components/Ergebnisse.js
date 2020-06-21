@@ -16,11 +16,11 @@ const Ergebnisse = ({ filterData }) => {
   console.log(filteredData, data, filterData);
   return (
     <div>
-      <h1>Ergebnisse</h1>
+      <h2>Ergebnisse</h2>
       <div>
         <ol>
-          {filteredData.map((el) => (
-            <li>
+          {filteredData.map((el, index) => (
+            <li key={index}>
               {el.Name}||💰{el.Preis}||🚗{el.Entfernung}||🥦
               {el["Veggie-Tauglich"]}
             </li>

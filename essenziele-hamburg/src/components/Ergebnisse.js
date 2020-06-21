@@ -1,7 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Ergebnisse extends Component {
-  render() {
-    return <div></div>;
-  }
-}
+const Ergebnisse = () => {
+  return (
+    <div>
+      <h1>Ergebnisse</h1>
+      <div>
+        <ol>
+          <li>{}</li>
+        </ol>
+      </div>
+    </div>
+  );
+};
+
+export default Ergebnisse;

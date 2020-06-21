@@ -8,6 +8,12 @@
 }
 .options-selector li {
   list-style: none;
+  border: solid 1px black;
+  background-color: white;
+  color: black;
+  width: 150px;
+  height: 30px;
+  text-align: center;
 }
 .options-selector input {
   visibility: hidden;
@@ -15,4 +21,8 @@
 .options-selector input:checked + label {
   background-color: black;
   color: white;
+  border: solid 1px black;
+  width: 150px;
+  height: 30px;
+  text-align: center;
 }

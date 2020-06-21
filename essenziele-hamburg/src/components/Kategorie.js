@@ -4,30 +4,30 @@ const Kategorie = () => {
   return (
     <div>
       <h2>Kategorie - FILTER</h2>
-      <ul>
+      <ul className="options-selector">
         <li>
-          <input type="radio" value="Alles" name="radio" id="radio1" />
-          <label for="radio1">Alles</label>
+          <input type="radio" value="Alles" name="Alles" id="kat1" />
+          <label for="kat1">Alles</label>
         </li>
         <li>
-          <input type="radio" value="Burger" name="radio" id="radio2" />
-          <label for="radio2">Burger</label>
+          <input type="radio" value="Burger" name="radio" id="kat2" />
+          <label for="kat2">Burger</label>
         </li>
         <li>
-          <input type="radio" value="Pizza/Pasta" name="radio" id="radio3" />
-          <label for="radio3">Pizza/Pasta</label>
+          <input type="radio" value="Pizza / Pasta" name="radio" id="kat3" />
+          <label for="kat3">Pizza/Pasta</label>
         </li>
         <li>
-          <input type="radio" value="Asiatisch" name="radio" id="radio1" />
-          <label for="radio1">Asiatisch</label>
+          <input type="radio" value="Asiatisch" name="radio" id="kat4" />
+          <label for="kat4">Asiatisch</label>
         </li>
         <li>
-          <input type="radio" value="Hausmannskos" name="radio" id="radio3" />
-          <label for="radio3">Hausmannskost</label>
+          <input type="radio" value="Hausmannskost" name="radio" id="kat5" />
+          <label for="kat5">Hausmannskost</label>
         </li>
         <li>
-          <input type="radio" value="Sonstiges" name="radio" id="radio3" />
-          <label for="radio3">Sonstiges</label>
+          <input type="radio" value="Sonstiges" name="radio" id="kat6" />
+          <label for="kat6">Sonstiges</label>
         </li>
       </ul>
     </div>

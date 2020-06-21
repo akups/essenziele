@@ -5,14 +5,15 @@
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
+  margin-left: 20px;
 }
 .options-selector li {
   list-style: none;
   border: solid 1px black;
   background-color: white;
   color: black;
-  width: 150px;
-  height: 30px;
+  width: 140px;
+  height: 50px;
   text-align: center;
 }
 .options-selector input {
@@ -22,7 +23,41 @@
   background-color: black;
   color: white;
   border: solid 1px black;
-  width: 150px;
-  height: 30px;
+  width: 140px;
+  height: 50px;
   text-align: center;
+}
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: stretch;
+}
+
+.App {
+  width: 85vw;
+  height: 85vh;
+  border: solid 2px black;
+  margin-left: 50px;
+}
+
+.reset {
+  border: solid 1px black;
+  background-color: white;
+  color: black;
+  width: 120px;
+  height: 60px;
+  text-align: center;
+}
+.randomize {
+  border: solid 1px black;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+}
+.ergebnisse {
 }

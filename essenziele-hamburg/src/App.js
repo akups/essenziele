@@ -17,7 +17,6 @@ class App extends React.Component {
 
   gatherInputValues = (inputValue) => {
     this.setState(inputValue);
-    console.log(this.state);
   };
 
   render() {
@@ -28,10 +27,14 @@ class App extends React.Component {
         <Entfernung fcn={this.gatherInputValues} />
         <Preis fcn={this.gatherInputValues} />
         <Veggietauglich fcn={this.gatherInputValues} />
-        <Ergebnisse filterdata={this.state} />
-        <div>
-          <button>Reset</button>
-          <button>Randomize</button>
+        <div className="bottom-container">
+          <div className="ergebnisse">
+            <Ergebnisse filterData={this.state} />
+          </div>
+          <div>
+            <button className="reset">Reset</button>
+            <button className="randomize">Randomize</button>
+          </div>
         </div>
         {/* <Karte /> */}
       </div>
